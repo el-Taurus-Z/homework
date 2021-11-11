@@ -11,15 +11,19 @@ public class task8 {
                 arr[i][j] = scanner.nextInt();
             }
         }
-        int sum=0;
+
         for (int i = 0; i < arr.length; i++) {
+            int colsum = 0;
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j] + " ");
-                sum += arr[0][j];
+
+                colsum += arr[j][i];
+
             }
-            System.out.println();
+
+            System.out.println(" Сумма столбца столбца: " + colsum);
         }
-        System.out.println(sum);
+
 
     }
 }
